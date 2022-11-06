@@ -12,10 +12,10 @@ class AuthorRepository {
             ?: throw RuntimeException("Not found")
     }
 
-fun getAllByIds(ids: Set<Int>): Map<Int, Author> =
-    AUTHORS
-        .filterKeys { it in ids }
-        .also { println("Get by ids: $ids") }
+    fun getAllByIds(ids: Set<Int>): Map<Int, Author> =
+        AUTHORS
+            .filterKeys { it in ids }
+            .also { println("Get by ids: $ids") }
 
     private companion object {
         val AUTHORS = listOf(
