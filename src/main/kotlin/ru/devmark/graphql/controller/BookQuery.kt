@@ -16,15 +16,15 @@ class BookQuery(
     private val authorRepository: AuthorRepository,
 ) {
 
-    @QueryMapping
-    fun allBooks(@Argument limit: Int): List<Book> =
+    @QueryMapping("allBooks")
+    fun allBooks(@Argument("limit") limit: Int): List<Book> =
         bookRepository.getAll(limit)
 
 //    @SchemaMapping(typeName = "Book", field = "author")
 //    fun author(book: Book): Author =
 //        authorRepository.getById(book.authorId)
 
-    @BatchMapping
+    @BatchMapping(typeName = "Book", field = "author")
     fun author(books: List<Book>): Map<Book, Author> {
         val ids = books.map { it.authorId }.toSet()
         val authors = authorRepository.getAllByIds(ids)

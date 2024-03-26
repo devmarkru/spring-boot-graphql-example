@@ -2,6 +2,7 @@ package ru.devmark.graphql.repository
 
 import org.springframework.stereotype.Repository
 import ru.devmark.graphql.model.Author
+import java.time.LocalDate
 
 @Repository
 class AuthorRepository {
@@ -19,8 +20,8 @@ class AuthorRepository {
 
     private companion object {
         val AUTHORS = listOf(
-            Author(1, "Лев", "Толстой"),
-            Author(2, "Александр", "Пушкин"),
+            Author(1, "Лев", "Толстой", LocalDate.of(1828, 9, 9)),
+            Author(2, "Александр", "Пушкин", LocalDate.of(1799, 6, 6)),
         ).associateBy { it.id }
     }
 }

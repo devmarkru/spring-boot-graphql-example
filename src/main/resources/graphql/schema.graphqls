@@ -1,3 +1,6 @@
+scalar Date
+scalar BigDecimal
+
 # Книга
 type Book {
     id: ID!
@@ -5,6 +8,8 @@ type Book {
     name: String!
     # Автор книги
     author: Author!
+    # Цена
+    price: BigDecimal!
 }
 
 # Автор книги
@@ -14,6 +19,8 @@ type Author {
     firstName: String!
     # Фамилия автора
     lastName: String!
+    # Дата рождения
+    birthDate: Date!
 }
 
 # Публичные методы GraphQL
