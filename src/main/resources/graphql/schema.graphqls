@@ -23,8 +23,23 @@ type Author {
     birthDate: Date!
 }
 
-# Публичные методы GraphQL
+# Публичные методы GraphQL для чтения данных
 type Query {
     # Список книг
     allBooks(limit: Int): [Book]
+}
+
+# Публичные методы GraphQL для изменения данных
+type Mutation {
+    # Добавление нового автора
+    createAuthor(author: AuthorCreationRequest!): Author!
+}
+
+input AuthorCreationRequest {
+    # Имя автора
+    firstName: String!
+    # Фамилия автора
+    lastName: String!
+    # Дата рождения
+    birthDate: Date!
 }
