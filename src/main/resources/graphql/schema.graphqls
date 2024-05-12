@@ -26,7 +26,9 @@ type Author {
 # Публичные методы GraphQL для чтения данных
 type Query {
     # Список книг
-    allBooks(limit: Int): [Book]
+    allBooks(limit: Int!): [Book]
+    # Получить книгу по её id
+    getBookById(id: Int!): Book!
 }
 
 # Публичные методы GraphQL для изменения данных
