@@ -1,4 +1,9 @@
 # Пример работы с GraphQL в Spring Boot
-Данный проект является частью статей [GraphQL в Spring Boot](https://devmark.ru/article/spring-boot-graphql-example), [Мутации в GraphQL](https://devmark.ru/article/spring-boot-graphql-mutation) и [Обработка ошибок в GraphQL](https://devmark.ru/article/spring-boot-graphql-custom-exception).
+Данный проект написан на **Kotlin** и демонстрирует основные возможности по работе с **GraphQL** в **Spring Boot**.
 
-Ещё больше материалов по разработке ПО вы можете найти на моём сайте [devmark.ru](https://devmark.ru/).
+### Полезные ссылки
+* [GraphQL в Spring Boot](https://devmark.ru/article/spring-boot-graphql-example).
+* [Мутации в GraphQL](https://devmark.ru/article/spring-boot-graphql-mutation).
+* [Обработка ошибок в GraphQL](https://devmark.ru/article/spring-boot-graphql-custom-exception).
+* [Новости проекта](https://t.me/+RjrPWNUEwf8wZTMy) и короткие заметки.
+* Ещё больше статей по разработке ПО вы можете найти на моём сайте [devmark.ru](https://devmark.ru/).
